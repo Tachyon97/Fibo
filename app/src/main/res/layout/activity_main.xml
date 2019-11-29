@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainScreen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/board"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/jobsActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="OpenJobsActivity"
+            android:text="@string/Jobs" />
+
+        <Button
+            android:id="@+id/statsActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="OpenStatsActivity"
+            android:text="@string/stats" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/jobsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/board"
+        android:visibility="invisible">
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/statsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/board"
+        android:visibility="invisible">
+
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="50dp"
+            android:text="@string/farhad_mohammad" />
+
+        <TextView
+            android:id="@+id/cheatStuff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="50dp"
+            android:text="@string/earned_capital_0_kr"
+            android:textStyle="bold"
+            android:layout_below="@id/userName"
+            tools:ignore="ObsoleteLayoutParam" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="SignOuts"
+            android:text="@string/logout"
+            android:layout_margin="20dp"
+            android:layout_below="@id/cheatStuff"
+            tools:ignore="ObsoleteLayoutParam" />
+
+    </FrameLayout>
+
+</RelativeLayout>

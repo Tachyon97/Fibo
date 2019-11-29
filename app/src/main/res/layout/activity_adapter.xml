@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/button">
+
+    <TextView
+        android:id="@+id/calcs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="Pris: 460 KR"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/from"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/calcs"
+        android:layout_margin="5dp"
+        android:text="Från: Fäbod"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/to"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/from"
+        android:layout_margin="5dp"
+        android:text="Till: Skärholmen"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/phoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/to"
+        android:layout_margin="5dp"
+        android:text="Telefon: 076 100 39 62"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phoneNumber"
+        android:layout_margin="5dp"
+        android:text="Email: Farhad.mohammad@yh.nackademin.se"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:layout_margin="5dp"
+        android:text="Message"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/openContact"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@id/textView2"
+        android:layout_margin="5dp"
+        android:text="Contact"
+        tools:ignore="HardcodedText"
+        android:onClick="DialAction"/>
+
+    <Button
+        android:id="@+id/doneContact"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@id/textView2"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@id/openContact"
+        android:text="Done"
+        tools:ignore="HardcodedText" />
+
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Fibo Transport</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="register">Register</string>
+    <string name="login">Login</string>
+    <string name="fibo_transport">Fibo Transport</string>
+    <string name="Jobs">Jobs</string>
+    <string name="Stats">Stats</string>
+    <string name="fibo_transporthj_lpen">Fibo Transporthjälpen</string>
+    <string name="history">History</string>
+    <string name="noAcc">No Account? Create One</string>
+    <string name="email">Email</string>
+    <string name="password">password</string>
+    <string name="stats">Stats</string>
+    <string name="register_new_driver">Register new Driver</string>
+    <string name="name">Name</string>
+    <string name="logout">logout</string>
+    <string name="farhad_mohammad">Farhad Mohammad</string>
+    <string name="earned_capital_0_kr">Earned capital: 0 Kr</string>
+</resources>
